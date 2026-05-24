@@ -1,0 +1,137 @@
+{
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "qwen3.6-35b-a3b",
+        "name": "qwen3.6-35b-a3b",
+        "baseUrl": "http://10.0.0.5:8000/v1",
+        "description": "qwen3.6-35b-a3b via vllm",
+        "envKey": "VLLM_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 262000,
+          "modalities": {
+            "image": true
+          },
+          "extra_body": {
+            "chat_template_kwargs": {
+              "enable_thinking": true
+            }
+          }
+        }
+      },
+      {
+        "id": "deepseek-v4-flash",
+        "name": "deepseek-v4-flash",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "description": "deepseek-v4-flash via DeepSeek",
+        "envKey": "DEEPSEEK_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 1000000,
+          "extra_body": {
+            "enable_thinking": true
+          }
+        }
+      },
+      {
+        "id": "Pro/moonshotai/Kimi-K2.6",
+        "name": "Kimi-K2.6",
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "description": "Kimi-K2.6 via SiliconFlow",
+        "envKey": "SILICONFLOW_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 256000,
+          "modalities": {
+            "image": true
+          },
+          "extra_body": {
+            "enable_thinking": true
+          }
+        }
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "description": "deepseek-v4-pro via DeepSeek",
+        "envKey": "DEEPSEEK_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 1000000,
+          "extra_body": {
+            "enable_thinking": true
+          }
+        }
+      },
+      {
+        "id": "qwen3.7-max",
+        "name": "Qwen3.7-Max",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "description": "Qwen3.7-Max via Dashscope",
+        "envKey": "DASHSCOPE_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 991000,
+          "extra_body": {
+            "enable_thinking": true
+          }
+        }
+      }
+    ]
+  },
+  "security": {
+    "auth": {
+      "selectedType": "openai"
+    }
+  },
+  "model": {
+    "name": "deepseek-v4-pro"
+  },
+  "mcpServers": {
+    "WebSearch": {
+      "httpUrl": "https://dashscope.aliyuncs.com/api/v1/mcps/WebSearch/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DASHSCOPE_API_KEY}"
+      }
+    },
+    "WebParser": {
+      "url": "https://dashscope.aliyuncs.com/api/v1/mcps/WebParser/sse",
+      "headers": {
+        "Authorization": "Bearer ${DASHSCOPE_API_KEY}"
+      }
+    }
+  },
+  "$version": 4,
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  },
+  "general": {
+    "preferredEditor": "vscode",
+    "language": "zh",
+    "enableAutoUpdate": false,
+    "checkpointing": {
+      "enabled": true
+    },
+    "outputLanguage": "中文"
+  },
+  "ui": {
+    "feedbackLastShownTimestamp": 1774184920838,
+    "statusLine": {
+      "type": "command",
+      "command": "bash ~/.qwen/statusline-command.sh"
+    }
+  },
+  "tools": {
+    "approvalMode": "yolo"
+  },
+  "fastModel": "deepseek-v4-flash",
+  "channels": {
+    "my-weixin": {
+      "type": "weixin",
+      "senderPolicy": "pairing",
+      "allowedUsers": [],
+      "sessionScope": "user",
+      "cwd": "/home/mingmingde",
+      "model": "deepseek-v4-pro",
+      "instructions": "You are a concise coding assistant responding via WeChat. Keep responses under 500 characters. Use plain text only."
+    }
+  }
+}
