@@ -117,8 +117,7 @@
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"
-    },
-    "autoModeAcknowledged": true
+    }
   },
   "tools": {
     "approvalMode": "yolo"
