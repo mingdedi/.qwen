@@ -46,6 +46,19 @@
         }
       },
       {
+        "id": "mimo-v2.5-pro",
+        "name": "MiMo-V2.5-Pro",
+        "baseUrl": "https://api.xiaomimimo.com/v1",
+        "description": "MiMo-V2.5-Pro via MiMo",
+        "envKey": "MIMO_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 1000000,
+          "extra_body": {
+            "thinking": true
+          }
+        }
+      },
+      {
         "id": "Pro/moonshotai/Kimi-K2.6",
         "name": "Kimi-K2.6",
         "baseUrl": "https://api.siliconflow.cn/v1",
@@ -82,7 +95,7 @@
     }
   },
   "model": {
-    "name": "deepseek-v4-pro"
+    "name": "mimo-v2.5-pro"
   },
   "mcpServers": {
     "WebSearch": {
@@ -117,7 +130,8 @@
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"
-    }
+    },
+    "autoModeAcknowledged": true
   },
   "tools": {
     "approvalMode": "yolo"
