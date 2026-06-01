@@ -31,7 +31,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": true
+            "thinking": {
+                "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -48,7 +50,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": true
+            "thinking": {
+                "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -65,7 +69,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": true
+            "thinking": {
+                "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -117,7 +123,7 @@
     }
   },
   "model": {
-    "name": "mimo-v2.5-pro"
+    "name": "deepseek-v4-pro"
   },
   "mcpServers": {
     "WebSearch": {
