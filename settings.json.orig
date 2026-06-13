@@ -31,7 +31,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": true
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -48,7 +50,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": true
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -65,7 +69,9 @@
         "generationConfig": {
           "contextWindowSize": 1000000,
           "extra_body": {
-            "thinking": "enabled"
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -148,7 +154,7 @@
     "outputLanguage": "中文"
   },
   "ui": {
-    "feedbackLastShownTimestamp": 1774184920838,
+    "feedbackLastShownTimestamp": 1781153842817,
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"
