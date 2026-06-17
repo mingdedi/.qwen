@@ -59,6 +59,23 @@
         }
       },
       {
+        "id": "zai-org/glm-5.2",
+        "name": "GLM5.2",
+        "baseUrl": "https://api.ppinfra.com/v3/openai",
+        "description": "GLM5.2 via PPIO",
+        "envKey": "PPIO_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 1048000,
+          "extra_body": {
+            "enable_thinking": true
+          },
+          "samplingParams": {
+            "temperature": 0.1,
+            "max_tokens": 131000
+          }
+        }
+      },
+      {
         "id": "qwen3.7-max-2026-06-08",
         "name": "Qwen3.7-Max",
         "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
@@ -117,7 +134,7 @@
     "outputLanguage": "中文"
   },
   "ui": {
-    "feedbackLastShownTimestamp": 1781153842817,
+    "feedbackLastShownTimestamp": 1781580000026,
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"

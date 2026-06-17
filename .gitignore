@@ -1,5 +1,8 @@
 installation_id
 tip_history.json
+.file-history-cleanup
+memories/
+usage_record.jsonl
 todos
 tmp
 projects

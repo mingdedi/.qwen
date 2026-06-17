@@ -2,50 +2,10 @@
   "modelProviders": {
     "openai": [
       {
-        "id": "qwen3.6-35b-a3b",
-        "name": "qwen3.6-35b-a3b",
-        "baseUrl": "http://10.0.0.5:8000/v1",
-        "description": "qwen3.6-35b-a3b via vllm",
-        "envKey": "VLLM_API_KEY",
-        "generationConfig": {
-          "contextWindowSize": 262000,
-          "modalities": {
-            "image": true
-          },
-          "extra_body": {
-            "chat_template_kwargs": {
-              "enable_thinking": true
-            }
-          },
-          "samplingParams": {
-            "temperature": 0.1
-          }
-        }
-      },
-      {
         "id": "deepseek-v4-flash",
         "name": "deepseek-v4-flash",
         "baseUrl": "https://api.deepseek.com/v1",
         "description": "deepseek-v4-flash via DeepSeek",
-        "envKey": "DEEPSEEK_API_KEY",
-        "generationConfig": {
-          "contextWindowSize": 1000000,
-          "extra_body": {
-            "thinking": {
-              "type": "enabled"
-            }
-          },
-          "samplingParams": {
-            "temperature": 0.1,
-            "max_tokens": 384000
-          }
-        }
-      },
-      {
-        "id": "deepseek-v4-pro",
-        "name": "deepseek-v4-pro",
-        "baseUrl": "https://api.deepseek.com/v1",
-        "description": "deepseek-v4-pro via DeepSeek",
         "envKey": "DEEPSEEK_API_KEY",
         "generationConfig": {
           "contextWindowSize": 1000000,
@@ -80,32 +40,35 @@
         }
       },
       {
-        "id": "Pro/moonshotai/Kimi-K2.6",
-        "name": "Kimi-K2.6",
-        "baseUrl": "https://api.siliconflow.cn/v1",
-        "description": "Kimi-K2.6 via SiliconFlow",
-        "envKey": "SILICONFLOW_API_KEY",
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "description": "deepseek-v4-pro via DeepSeek",
+        "envKey": "DEEPSEEK_API_KEY",
         "generationConfig": {
-          "contextWindowSize": 256000,
-          "modalities": {
-            "image": true
-          },
+          "contextWindowSize": 1000000,
           "extra_body": {
-            "enable_thinking": true
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "samplingParams": {
-            "temperature": 0.1
+            "temperature": 0.1,
+            "max_tokens": 384000
           }
         }
       },
       {
-        "id": "qwen3.7-max",
+        "id": "qwen3.7-max-2026-06-08",
         "name": "Qwen3.7-Max",
         "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
         "description": "Qwen3.7-Max via Dashscope",
         "envKey": "DASHSCOPE_API_KEY",
         "generationConfig": {
           "contextWindowSize": 991000,
+          "modalities": {
+            "image": true
+          },
           "extra_body": {
             "enable_thinking": true
           },
@@ -154,7 +117,7 @@
     "outputLanguage": "中文"
   },
   "ui": {
-    "feedbackLastShownTimestamp": 1781153842817,
+    "feedbackLastShownTimestamp": 1781580000026,
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"
