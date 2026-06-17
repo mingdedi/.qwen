@@ -59,23 +59,6 @@
         }
       },
       {
-        "id": "zai-org/glm-5.2",
-        "name": "zai-org/glm-5.2",
-        "baseUrl": "https://api.ppinfra.com/v3/openai",
-        "description": "GLM5.2 via PPIO",
-        "envKey": "PPIO_API_KEY",
-        "generationConfig": {
-          "contextWindowSize": 1048000,
-          "extra_body": {
-            "enable_thinking": true
-          },
-          "samplingParams": {
-            "temperature": 0.1,
-            "max_tokens": 131000
-          }
-        }
-      },
-      {
         "id": "glm-5.2",
         "name": "glm-5.2",
         "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
