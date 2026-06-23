@@ -78,13 +78,13 @@
         }
       },
       {
-        "id": "qwen3.7-max-2026-06-08",
-        "name": "qwen3.7-max-2026-06-08",
+        "id": "kimi-k2.7-code",
+        "name": "kimi-k2.7-code",
         "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "description": "Qwen3.7-Max via Dashscope",
+        "description": "kimi-k2.7-code via Dashscope",
         "envKey": "DASHSCOPE_API_KEY",
         "generationConfig": {
-          "contextWindowSize": 991000,
+          "contextWindowSize": 256000,
           "modalities": {
             "image": true
           },
@@ -93,7 +93,7 @@
           },
           "samplingParams": {
             "temperature": 0.1,
-            "max_tokens": 64000
+            "max_tokens": 16000
           }
         }
       }
