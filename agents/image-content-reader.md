@@ -1,6 +1,6 @@
 ---
 name: image-content-reader
-model: kimi-k2.7-code
+model: qwen3.7-plus
 description: |-
   Use this agent when the main model needs to understand the content of image files (such as PNG, JPG, JPEG, GIF, WebP, BMP, SVG, etc.) but lacks native vision capabilities. This agent serves exclusively as a visual perception proxy, reading images and describing their content according to the main model's specific requirements.
 

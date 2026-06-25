@@ -96,6 +96,26 @@
             "max_tokens": 16000
           }
         }
+      },
+      {
+        "id": "qwen3.7-plus",
+        "name": "qwen3.7-plus",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "description": "qwen3.7-plus via Dashscope",
+        "envKey": "DASHSCOPE_API_KEY",
+        "generationConfig": {
+          "contextWindowSize": 991000,
+          "modalities": {
+            "image": true
+          },
+          "extra_body": {
+            "enable_thinking": false
+          },
+          "samplingParams": {
+            "temperature": 0.1,
+            "max_tokens": 64000
+          }
+        }
       }
     ]
   },

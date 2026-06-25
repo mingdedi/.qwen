@@ -16,3 +16,6 @@ insights
 .env
 computer-use
 settings.json.orig
+usage_record
+.subagent-cleanup-*
+usage
