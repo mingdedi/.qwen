@@ -21,10 +21,10 @@
         }
       },
       {
-        "id": "mimo-v2.5-pro",
-        "name": "mimo-v2.5-pro",
+        "id": "mimo-v2.5-pro-ultraspeed",
+        "name": "mimo-v2.5-pro-ultraspeed",
         "baseUrl": "https://api.xiaomimimo.com/v1",
-        "description": "MiMo-V2.5-Pro via MiMo",
+        "description": "mimo-v2.5-pro-ultraspeed via MiMo",
         "envKey": "MIMO_API_KEY",
         "generationConfig": {
           "contextWindowSize": 1000000,
@@ -105,7 +105,8 @@
     }
   },
   "model": {
-    "name": "glm-5.2"
+    "name": "glm-5.2",
+    "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3"
   },
   "mcpServers": {
     "WebSearch": {
@@ -136,7 +137,7 @@
     "outputLanguage": "中文"
   },
   "ui": {
-    "feedbackLastShownTimestamp": 1781580000026,
+    "feedbackLastShownTimestamp": 1782311608949,
     "statusLine": {
       "type": "command",
       "command": "bash ~/.qwen/statusline-command.sh"
