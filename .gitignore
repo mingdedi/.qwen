@@ -19,3 +19,5 @@ settings.json.orig
 usage_record
 .subagent-cleanup-*
 usage
+extension-store
+extensions
