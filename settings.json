@@ -2,13 +2,18 @@
   "modelProviders": {
     "openai": [
       {
-        "id": "deepseek-v4-flash-0731",
-        "name": "deepseek-v4-flash-0731",
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "description": "deepseek-v4-flash-0731 via Dashscope",
-        "envKey": "DASHSCOPE_API_KEY_TEMP1",
+        "id": "deepseek-v4-flash",
+        "name": "deepseek-v4-flash",
+        "baseUrl": "https://api.deepseek.com",
+        "description": "deepseek-v4-flash via DeepSeek",
+        "envKey": "DEEPSEEK_API_KEY",
         "generationConfig": {
           "contextWindowSize": 1000000,
+          "extra_body": {
+            "thinking": {
+              "type": "enabled"
+            }
+          },
           "samplingParams": {
             "temperature": 0.1,
             "max_tokens": 384000
@@ -82,8 +87,8 @@
     }
   },
   "model": {
-    "name": "qwen3.8-max",
-    "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    "name": "glm-5.2",
+    "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3"
   },
   "mcpServers": {
     "WebSearch": {
@@ -124,7 +129,7 @@
   "tools": {
     "approvalMode": "auto"
   },
-  "fastModel": "openai:deepseek-v4-flash-0731",
+  "fastModel": "deepseek-v4-flash",
   "channels": {
     "my-weixin": {
       "type": "weixin",
@@ -132,7 +137,7 @@
       "allowedUsers": [],
       "sessionScope": "user",
       "cwd": "/home/mingmingde",
-      "model": "deepseek-v4-flash-0731",
+      "model": "deepseek-v4-flash",
       "instructions": "You are a concise coding assistant responding via WeChat. Keep responses under 500 characters. Use plain text only."
     }
   }
