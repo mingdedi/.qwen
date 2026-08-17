@@ -21,18 +21,17 @@
         }
       },
       {
-        "id": "qwen3.8-max",
-        "name": "qwen3.8-max",
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "description": "qwen3.8-max via Dashscope",
-        "envKey": "DASHSCOPE_API_KEY_TEMP1",
+        "id": "glm-5.3",
+        "name": "GLM glm-5.3",
+        "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "description": "glm-5.3 via GLM",
+        "envKey": "GLM_API_KEY",
         "generationConfig": {
-          "contextWindowSize": 991000,
-          "modalities": {
-            "image": true
-          },
+          "contextWindowSize": 1000000,
           "extra_body": {
-            "enable_thinking": true
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "samplingParams": {
             "temperature": 0.1,
@@ -41,10 +40,10 @@
         }
       },
       {
-        "id": "glm-5.2",
-        "name": "glm-5.2",
+        "id": "glm-5.3",
+        "name": "Ark glm-5.3",
         "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
-        "description": "GLM5.2 via Ark Coding Plan",
+        "description": "GLM5.3 via Ark Coding Plan",
         "envKey": "ARK_API_KEY",
         "generationConfig": {
           "contextWindowSize": 1048000,
@@ -60,10 +59,10 @@
         }
       },
       {
-        "id": "qwen3.7-plus",
-        "name": "qwen3.7-plus",
+        "id": "qwen3.8-max",
+        "name": "qwen3.8-max",
         "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "description": "qwen3.7-plus via Dashscope",
+        "description": "qwen3.8-max via Dashscope",
         "envKey": "DASHSCOPE_API_KEY_TEMP1",
         "generationConfig": {
           "contextWindowSize": 991000,
@@ -75,7 +74,7 @@
           },
           "samplingParams": {
             "temperature": 0.1,
-            "max_tokens": 64000
+            "max_tokens": 384000
           }
         }
       }
@@ -87,7 +86,7 @@
     }
   },
   "model": {
-    "name": "glm-5.2",
+    "name": "glm-5.3",
     "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3"
   },
   "mcpServers": {

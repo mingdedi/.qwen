@@ -18,6 +18,7 @@ computer-use
 settings.json.orig
 usage_record
 .subagent-cleanup-*
+.openai-logs-cleanup-*
 usage
 extension-store
 extensions
