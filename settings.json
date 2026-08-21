@@ -83,6 +83,30 @@
             "max_tokens": 65536
           }
         }
+      },
+      {
+        "id": "qwen3.8-27b",
+        "name": "Local qwen3.8-27b",
+        "baseUrl": "http://localhost:8000/v1",
+        "description": "qwen3.8-27b via 本地 vLLM (GPU0/1, MTP加速, 默认思考模式)",
+        "envKey": "VLLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 262144,
+          "modalities": {
+            "image": true
+          },
+          "extra_body": {
+            "chat_template_kwargs": {
+              "enable_thinking": true
+            }
+          },
+          "samplingParams": {
+            "temperature": 0.1,
+            "max_tokens": 32768
+          }
+        }
       }
     ]
   },
